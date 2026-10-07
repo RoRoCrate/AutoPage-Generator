@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>観光スポットガイド</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #f4f6f8; color: #333; line-height: 1.6; padding: 20px; }
+    header { text-align: center; margin-bottom: 30px; padding: 20px 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+    .card-link { text-decoration: none; color: inherit; display: flex; flex-direction: column; height: 100%; }
+    .card-image { height: 200px; background: #eee; overflow: hidden; }
+    .card-image img { width: 100%; height: 100%; object-fit: cover; }
+    .card-content { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .card-header { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
+    .category { background: #2563eb; color: #fff; font-size: 12px; padding: 2px 8px; border-radius: 4px; font-weight: bold; }
+    .tag { color: #64748b; font-size: 12px; }
+    .title { font-size: 20px; color: #1e293b; margin-bottom: 4px; }
+    .subtitle { font-size: 14px; color: #0284c7; margin-bottom: 12px; font-weight: 600; }
+    .summary { font-weight: bold; font-size: 14px; color: #475569; word-break: break-word; margin-bottom: 16px; }
+    .read-more { margin-top: auto; font-size: 14px; color: #2563eb; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>匝瑳市観光ガイド</h1>
+  </header>
+  <main class="grid">
+    
+    <article class="card">
+      <a href="articles/1/" class="card-link">
+        <div class="card-image">
+          <img src="../ex)記事に使う画像の名前" alt="ex)ページタイトル" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="category"></span>
+            <div class="tags"></div>
+          </div>
+          <h2 class="title">ex)ページタイトル</h2>
+          <h3 class="subtitle">ex)記事内の見出し</h3>
+          <p class="summary">ex)記事の簡単な概要</p>
+          <span class="read-more">記事を読む →</span>
+        </div>
+      </a>
+    </article>
+    
+    <article class="card">
+      <a href="articles/2/" class="card-link">
+        <div class="card-image">
+          <img src="../images/default.jpg" alt="ああああ" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="category"></span>
+            <div class="tags"></div>
+          </div>
+          <h2 class="title">ああああ</h2>
+          <h3 class="subtitle">あああああああああ</h3>
+          <p class="summary">ああああああああああああああああああああああああああああ</p>
+          <span class="read-more">記事を読む →</span>
+        </div>
+      </a>
+    </article>
+    
+    <article class="card">
+      <a href="articles/3/" class="card-link">
+        <div class="card-image">
+          <img src="../images/default.jpg" alt="" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-header">
+            <span class="category"></span>
+            <div class="tags"></div>
+          </div>
+          <h2 class="title"></h2>
+          <h3 class="subtitle"></h3>
+          <p class="summary"></p>
+          <span class="read-more">記事を読む →</span>
+        </div>
+      </a>
+    </article>
+    
+  </main>
+</body>
+</html>
